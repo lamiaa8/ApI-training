@@ -1,0 +1,159 @@
+
+body{
+    padding: 50px 0;
+}
+.action{
+    top: 0;
+    height: 0% ;
+    width:0% ;
+    animation-name: user !important;  
+    animation-duration: 2s;
+
+}
+@keyframes user {
+    from{
+        top: 0px;
+        width: 0;
+        opacity: .3;
+        height:0;
+    }
+    to{
+        top: 0;
+        height:100%;
+        width:70% ;
+        opacity: 1;
+    }
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    margin: 20px 0;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 20px 20px 50px 15px grey;
+}
+.card img {
+    cursor: pointer;
+    width: 100%;
+    height: 250px;
+}
+#lightBoxContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.734);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility:hidden;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+#lightBoxItem {
+    padding: 20px;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+#lightBoxItem  i {
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    color: #fff;
+}
+#lightBoxItem #close {
+    position: absolute;
+    top: 30px;
+    right: 70px;
+}
+#lightBoxItem #next {
+    right:50px
+}
+#lightBoxItem #prev{
+    left: 50px;
+}
+
+img {
+    vertical-align: middle;
+    height: 100%;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+
+.cursor {
+cursor: pointer;
+}
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+height: 40%;
+}
+  /* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+.active,
+.demo:hover {
+opacity: 1;
+}
+.mySlides{
+    height: 90vh;
+    overflow: hidden;
+}
+.row-img-slider{
+    height: 50vh;
+}
+
+.card .card-text{
+    font-size: 12px;
+    color: #5c5a5a;
+
+}
+
+.slider .butt{
+    justify-content: center;
+    margin: 100px 0;
+}
+.slider .butt button{
+    color: #000;
+    padding: 10px 15px;
+    border: 1px solid #5c5a5a;
+    margin: 12px;
+    font-size: 18px;
+}
+.slider .butt button.active{
+    border: none;
+    background-color: rgb(181 39 218 / 75%);
+    color: #fff;
+}

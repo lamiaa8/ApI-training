@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Home</title>
+
+    <!-- C-D-N -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    
+    <section class="slider">
+        <div class="container">
+            <input type="text" onkeyup="searchProduct(this.value)" name="" class="w-50 form-control mx-auto my-5" id="search" placeholder="search product....">
+
+            <div class="row" id="row">
+
+            </div>
+
+            <div class="row butt">
+                <button class="btn active"id= "butOne" onclick="displayAllRecipes(1)">1</button>
+                <button class="btn" id= "butTwo" onclick="displayAllRecipes(2)">2</button>
+                <button class="btn" id= "butThree" onclick="displayAllRecipes(3)">3</button>
+                <button class="btn" id= "butFour" onclick="displayAllRecipes(4)">4</button>
+
+            </div>
+        </div>
+        <div id="lightBoxContainer">
+            <div id="lightBoxItem">
+                
+            </div>
+            
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+</body>
+
+</html>
